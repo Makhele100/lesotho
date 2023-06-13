@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="783.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lesotho.HelloController">
+   <top>
+      <MenuBar style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.23815620998719592" prefHeight="160.0" prefWidth="200.0" style="-fx-background-color: lightblue;" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox prefHeight="294.0" prefWidth="184.0" spacing="5.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="183.0" style="-fx-background-color: skyblue;" text="More Sites">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor></Button>
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="184.0" style="-fx-background-color: skyblue;" text="Book-In">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor></Button>
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="184.0" style="-fx-background-color: skyblue;" text="History">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor></Button>
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="183.0" style="-fx-background-color: skyblue;" text="Updates">
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow />
+                           </effect></Button>
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="208.0" style="-fx-background-color: skyblue;" text="Rate &amp; Comment">
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="184.0" style="-fx-background-color: skyblue;" text="Settings">
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow />
+                           </effect></Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+                  <Button fx:id="close" layoutX="4.0" layoutY="414.0" mnemonicParsing="false" onAction="#closebtn" prefHeight="24.0" prefWidth="174.0" style="-fx-background-color: red;" text="Close" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Text fill="#3775cd" layoutX="140.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lesotho Attraction Sites">
+                     <font>
+                        <Font name="MathJax_Script-Regular" size="25.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="121.0" fitWidth="181.0" layoutX="14.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1905_xl.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="121.0" fitWidth="181.0" layoutX="401.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/kome-cave-houses-510.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="121.0" fitWidth="181.0" layoutX="207.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/img-20170924-173046-largejpg.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="121.0" fitWidth="181.0" layoutX="401.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/lesotho_cascate_semokong.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="135.0" fitWidth="181.0" layoutX="208.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/mohale.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="121.0" fitWidth="181.0" layoutX="14.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/afriski-mountain-resort.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="90.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 1" />
+                  <Text layoutX="282.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top  2" />
+                  <Text layoutX="477.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 3" />
+                  <Text layoutX="90.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 4" />
+                  <Text layoutX="282.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 5" />
+                  <Text layoutX="477.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 6" />
+                  <Hyperlink fx:id="katse" layoutX="65.0" layoutY="192.0" onAction="#katsed" text="Katse Dam">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink fx:id="mohale" layoutX="254.0" layoutY="192.0" onAction="#mohaled" text="Mohale Dam">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink fx:id="maletsunyane" layoutX="421.0" layoutY="192.0" onAction="#maletsunyanef" text="Maletsunyane Falls">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink fx:id="afriski" layoutX="80.0" layoutY="392.0" onAction="#afriskis" text="Afriski">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink fx:id="bosiu" layoutX="239.0" layoutY="392.0" onAction="#tbosiu" text="Thaba Bosiu">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink fx:id="kome" layoutX="451.0" layoutY="392.0" onAction="#komec" text="Kome Caves">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

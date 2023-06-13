@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lesotho.MaletsunyaneController">
+    <top>
+        <MenuBar style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <SplitPane dividerPositions="0.2407170294494238" prefHeight="160.0" prefWidth="200.0" style="-fx-background-color: lightblue;" BorderPane.alignment="CENTER">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="444.0" prefWidth="142.0">
+                    <children>
+                        <VBox prefHeight="294.0" prefWidth="184.0" spacing="5.0">
+                            <children>
+                                <Button fx:id="decriptionbtn" mnemonicParsing="false" onAction="#description" prefHeight="24.0" prefWidth="177.0" style="-fx-background-color: skyblue;" text="Description">
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow />
+                           </effect></Button>
+                                <Button fx:id="imagesbtn" mnemonicParsing="false" onAction="#pictures" prefHeight="24.0" prefWidth="175.0" style="-fx-background-color: skyblue;" text="Images">
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow />
+                           </effect></Button>
+                                <Button fx:id="videosbtn" mnemonicParsing="false" onAction="#videos" prefHeight="24.0" prefWidth="176.0" style="-fx-background-color: skyblue;" text="Videos">
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow />
+                           </effect></Button>
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="208.0" style="-fx-background-color: skyblue;" text="Rate &amp; Comment">
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </Button>
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </VBox>
+                        <Button fx:id="backbtn" layoutX="5.0" layoutY="375.0" mnemonicParsing="false" onAction="#back" prefHeight="24.0" prefWidth="174.0" style="-fx-background-color: black;" text="Back">
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor></Button>
+                        <Button fx:id="closebtn" layoutX="4.0" layoutY="410.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="175.0" style="-fx-background-color: red;" text="Close">
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor></Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="description" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/lesotho_cascate_semokong.jpg" />
+                            </image>
+                        </ImageView>
+                        <Text layoutX="331.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MALETSUNYANE FALLS">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font></Text>
+                        <Text layoutX="218.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Longest drop: 192 m" />
+                        <Text layoutX="219.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height: 192 m" />
+                        <Text layoutX="219.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location: Lesotho" />
+                        <Text layoutX="9.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Text>
+                  <Text layoutX="10.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maletsunyane Falls is a 192-metre-high waterfall in the Southern" />
+                  <Text layoutX="10.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="African country Lesotho. It is located near the town of Semonkong," />
+                  <Text layoutX="10.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="which also is named after the falls. The waterfall is on the " />
+                  <Text layoutX="10.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maletsunyane River and it falls from a ledge of Triassic-Jurassic basalt." />
+                  <Text layoutX="220.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating 4.5 Stars" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </center>
+   <effect>
+      <InnerShadow />
+   </effect>
+</BorderPane>
